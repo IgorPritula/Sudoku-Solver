@@ -283,7 +283,7 @@
 			
 			
 			for($x=1; $x<=9; $x++){
-				$step++;
+				
 				if($backjump){
 					
 					$x=9;
