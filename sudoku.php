@@ -319,7 +319,7 @@
 						$backStep = true;
 						continue;
 					}
-					elseif(!$sudoku->arr_pos_val[$y][$x] && $x=1){
+					elseif(!$sudoku->arr_pos_val[$y][$x] && $x==1){
 						$sudoku->new_arr[$y][$x] = null;
 						$backStep = true;
 						
@@ -333,7 +333,7 @@
 					
 					$x-=2;
 				}
-				elseif($sudoku->arr[$y][$x] && $backStep && $x=1){
+				elseif($sudoku->arr[$y][$x] && $backStep && $x==1){
 					break;
 				}
 			}
